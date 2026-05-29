@@ -13,6 +13,10 @@ window.siteContent = {
     links: [
       { label: "Email", url: "mailto:mingu0217@gmail.com" },
       { label: "GitHub", url: "https://github.com/JoJo0217" },
+      {
+        label: "Scholar",
+        url: "https://scholar.google.com/citations?user=TgVXif0AAAAJ&hl=en",
+      },
       { label: "LinkedIn", url: "https://www.linkedin.com/in/pyross" },
       { label: "CV", url: "assets/files/Mingyu_Jo_CV.pdf" },
     ],
@@ -47,7 +51,7 @@ window.siteContent = {
       ".",
     ],
     "My research interests lie in Artificial General Intelligence (AGI), with a particular focus on reasoning, generative models, and learning systems that can generalize beyond narrow tasks.",
-    "Before KAIST, I studied Computer Science and Engineering at Sungkyunkwan University, where I worked on self-supervised learning for tabular data and reinforcement learning for language modeling.",
+    "Before KAIST, I studied Computer Science and Engineering at Sungkyunkwan University, where I worked on self-supervised learning and reinforcement learning for language modeling.",
   ],
 
   news: [
