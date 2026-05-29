@@ -34,7 +34,12 @@ window.siteContent = {
 
   bio: [
     [
-      "I am a master's student in the School of Computing at KAIST, advised by Prof. Sungjin Ahn in the ",
+      "I am a master's student in the School of Computing at KAIST, advised by ",
+      {
+        label: "Prof. Sungjin Ahn",
+        url: "https://mlml.kaist.ac.kr/sungjinahn",
+      },
+      " in the ",
       {
         label: "Machine Learning and Mind Lab",
         url: "https://mlml.kaist.ac.kr/",
@@ -42,7 +47,7 @@ window.siteContent = {
       ".",
     ],
     "My research interests lie in Artificial General Intelligence (AGI), with a particular focus on reasoning, generative models, and learning systems that can generalize beyond narrow tasks.",
-    "Before KAIST, I studied Computer Science and Engineering at Sungkyunkwan University, where I worked on tabular learning and safe language model training.",
+    "Before KAIST, I studied Computer Science and Engineering at Sungkyunkwan University, where I worked on self-supervised learning for tabular data and reinforcement learning for language modeling.",
   ],
 
   news: [
