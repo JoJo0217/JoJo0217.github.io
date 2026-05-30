@@ -163,6 +163,12 @@ function renderSimpleList(target, items) {
   });
 }
 
+function renderTextList(target, items) {
+  items.forEach((item) => {
+    target.appendChild(createElement("p", "service-item", item));
+  });
+}
+
 function renderSkills(target, groups) {
   groups.forEach((group) => {
     const block = createElement("div", "skill-group");
@@ -202,6 +208,7 @@ function renderLists() {
   const renderers = {
     bio: renderBio,
     links: renderLinks,
+    academicService: renderTextList,
     news: renderNews,
     selectedPublications: renderPublications,
     publications: renderPublications,

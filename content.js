@@ -54,6 +54,10 @@ window.siteContent = {
     "Before KAIST, I studied Computer Science and Engineering at Sungkyunkwan University, where I worked on self-supervised learning and reinforcement learning for language modeling.",
   ],
 
+  academicService: [
+    "Reviewer (Conferences): NeurIPS (2026)",
+  ],
+
   news: [
     {
       date: "May 20, 2026",

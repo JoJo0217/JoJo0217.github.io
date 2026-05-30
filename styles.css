@@ -189,6 +189,15 @@ h3 {
   gap: 0.35rem;
 }
 
+.service-list {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.service-item {
+  margin: 0;
+}
+
 .news-item {
   margin: 0;
 }
