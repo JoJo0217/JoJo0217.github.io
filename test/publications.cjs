@@ -11,9 +11,9 @@ async function main() {
     for (const width of [1280, 390]) {
       await page.setViewportSize({ width, height: 900 });
       await page.goto("https://jojo0217.github.io/");
-      assert.equal(await page.locator(".news-item").count(), 5);
+      assert.equal(await page.locator(".news-item").count(), 4);
       assert.equal(await page.locator(".news-item .date").first().textContent(), "Sep 25, 2026");
-      assert.match(await page.locator(".news-list").innerText(), /BabyTheorist.*accepted to NeurIPS 2026/);
+      assert.match(await page.locator(".news-item").first().innerText(), /Our papers Generative Recursive Reasoning and BabyTheorist: .* are accepted to NeurIPS 2026!/);
       assert.equal(await page.locator(".publication").count(), 2);
       assert.equal(await page.locator(".publication").filter({ hasText: "BabyTheorist" }).count(), 0);
 

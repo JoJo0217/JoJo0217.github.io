@@ -61,16 +61,12 @@ window.siteContent = {
   news: [
     {
       date: "Sep 25, 2026",
-      textBefore: "Our paper ",
+      textBefore: "Our papers ",
       link: {
         label: "Generative Recursive Reasoning",
         url: "https://arxiv.org/abs/2605.19376",
       },
-      textAfter: " is accepted to NeurIPS 2026!",
-    },
-    {
-      date: "Sep 25, 2026",
-      text: "Our paper BabyTheorist: A Benchmark for Learning to Theorize the World from Observation Alone is accepted to NeurIPS 2026!",
+      textAfter: " and BabyTheorist: A Benchmark for Learning to Theorize the World from Observation Alone are accepted to NeurIPS 2026!",
     },
     {
       date: "May 20, 2026",
