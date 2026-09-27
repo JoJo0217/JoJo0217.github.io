@@ -96,6 +96,9 @@ function renderPublications(target, publications) {
     body.appendChild(createElement("h2", "", publication.title));
     appendHighlightedName(authors, publication.authors, content.basics.name);
     body.appendChild(authors);
+    if (publication.contributionNote) {
+      body.appendChild(createElement("p", "meta small", publication.contributionNote));
+    }
     body.appendChild(createElement("p", "venue", publication.venue));
 
     if (publication.links?.length) {

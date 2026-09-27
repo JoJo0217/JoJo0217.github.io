@@ -60,6 +60,19 @@ window.siteContent = {
 
   news: [
     {
+      date: "Sep 25, 2026",
+      textBefore: "Our paper ",
+      link: {
+        label: "Generative Recursive Reasoning",
+        url: "https://arxiv.org/abs/2605.19376",
+      },
+      textAfter: " is accepted to NeurIPS 2026!",
+    },
+    {
+      date: "Sep 25, 2026",
+      text: "Our paper BabyTheorist: A Benchmark for Learning to Theorize the World from Observation Alone is accepted to NeurIPS 2026!",
+    },
+    {
       date: "May 20, 2026",
       textBefore: "Our paper ",
       link: {
@@ -111,13 +124,25 @@ window.siteContent = {
       title: "Generative Recursive Reasoning",
       authors:
         "Junyeob Baek*, Mingyu Jo*, Minsu Kim, Mengye Ren, Yoshua Bengio, Sungjin Ahn",
-      venue: "Preprint",
+      contributionNote: "* Equal contribution",
+      venue: "Advances in Neural Information Processing Systems (NeurIPS), 2026",
       year: "2026",
       selected: true,
       links: [
         { label: "paper", url: "https://arxiv.org/abs/2605.19376" },
         { label: "page", url: "https://ahn-ml.github.io/gram-website/" },
       ],
+    },
+    {
+      title:
+        "BabyTheorist: A Benchmark for Learning to Theorize the World from Observation Alone",
+      authors:
+        "Doojin Baek*, Junyeob Baek*, Mingyu Jo, Hosung Lee, Taegu Kang, Gyubin Lee, Sungjin Ahn",
+      contributionNote: "* Equal contribution",
+      venue: "Advances in Neural Information Processing Systems (NeurIPS), 2026",
+      year: "2026",
+      selected: false,
+      links: [],
     },
     {
       title:
