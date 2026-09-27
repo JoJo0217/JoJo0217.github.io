@@ -34,7 +34,7 @@ The downloadable CV is maintained in [`cv/Mingyu_Jo_CV.tex`](cv/Mingyu_Jo_CV.tex
 
 1. [Edit the LaTeX source on GitHub](https://github.com/JoJo0217/JoJo0217.github.io/edit/main/cv/Mingyu_Jo_CV.tex), or edit it locally and push to `main`.
 2. The **Deploy site** GitHub Actions workflow compiles the source into a PDF, then publishes the website.
-3. The **PDF** button opens the compiled document; **Download** saves it as `Mingyu_Jo_CV.pdf`.
+3. The **PDF** button opens the compiled document in a new tab, where the browser's PDF viewer can save it.
 
 The published PDF stays at `assets/files/Mingyu_Jo_CV.pdf`. It is generated during deployment and is not edited or committed separately. If compilation fails, the previously deployed website and PDF stay available. Check the failed **Compile CV** step in [GitHub Actions](https://github.com/JoJo0217/JoJo0217.github.io/actions/workflows/deploy.yml) for the error.
 
