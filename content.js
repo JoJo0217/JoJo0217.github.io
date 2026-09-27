@@ -60,7 +60,7 @@ window.siteContent = {
 
   news: [
     {
-      date: "Sep 25, 2026",
+      date: "Sep 2026",
       lead: "Two papers",
       textBefore: "\u2014",
       link: {
@@ -70,7 +70,7 @@ window.siteContent = {
       textAfter: " and BabyTheorist\u2014were accepted to NeurIPS 2026!",
     },
     {
-      date: "May 20, 2026",
+      date: "May 2026",
       textBefore: "Our paper ",
       link: {
         label: "Generative Recursive Reasoning",
@@ -79,11 +79,11 @@ window.siteContent = {
       textAfter: " is released on arXiv!",
     },
     {
-      date: "Mar 1, 2026",
+      date: "Mar 2026",
       text: "Started my M.S. at KAIST after graduating from Sungkyunkwan University.",
     },
     {
-      date: "Jan 26, 2026",
+      date: "Jan 2026",
       textBefore: "Our paper ",
       link: {
         label: "Loopholing Discrete Diffusion",
