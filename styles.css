@@ -296,6 +296,13 @@ h3 {
   gap: 1rem;
 }
 
+.cv-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-shrink: 0;
+}
+
 .timeline-item,
 .simple-item,
 .skill-group {

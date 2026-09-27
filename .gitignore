@@ -15,3 +15,11 @@ node_modules/
 output/playwright/
 test-results/
 vendor
+/cv/*.aux
+/cv/*.fdb_latexmk
+/cv/*.fls
+/cv/*.log
+/cv/*.out
+/cv/*.pdf
+/cv/*.synctex.gz
+/assets/files/Mingyu_Jo_CV.pdf

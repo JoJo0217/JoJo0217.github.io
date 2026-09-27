@@ -30,4 +30,21 @@ Then visit `http://localhost:8000`.
 
 ## CV
 
-The current CV PDF is saved at `assets/files/Mingyu_Jo_CV.pdf`.
+The downloadable CV is maintained in [`cv/Mingyu_Jo_CV.tex`](cv/Mingyu_Jo_CV.tex).
+
+1. [Edit the LaTeX source on GitHub](https://github.com/JoJo0217/JoJo0217.github.io/edit/main/cv/Mingyu_Jo_CV.tex), or edit it locally and push to `main`.
+2. The **Deploy site** GitHub Actions workflow compiles the source into a PDF, then publishes the website.
+3. The **PDF** button opens the compiled document; **Download** saves it as `Mingyu_Jo_CV.pdf`.
+
+The published PDF stays at `assets/files/Mingyu_Jo_CV.pdf`. It is generated during deployment and is not edited or committed separately. If compilation fails, the previously deployed website and PDF stay available. Check the failed **Compile CV** step in [GitHub Actions](https://github.com/JoJo0217/JoJo0217.github.io/actions/workflows/deploy.yml) for the error.
+
+The CV tab's short HTML summary still uses `content.js`; it is separate from the downloadable LaTeX CV.
+
+To build a local PDF with TeX Live installed:
+
+```bash
+latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=cv cv/Mingyu_Jo_CV.tex
+cp cv/Mingyu_Jo_CV.pdf assets/files/Mingyu_Jo_CV.pdf
+```
+
+GitHub Pages uses **GitHub Actions** as its publishing source. Only the built static website and compiled PDF are deployed.
