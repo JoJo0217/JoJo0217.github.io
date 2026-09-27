@@ -71,6 +71,7 @@ function renderNews(target, items) {
   items.forEach((item) => {
     const row = createElement("p", "news-item");
     row.appendChild(createElement("span", "date", item.date));
+    if (item.lead) row.appendChild(createElement("strong", "", item.lead));
     if (item.link) {
       row.append(item.textBefore || "");
       const anchor = createElement("a", "", item.link.label);

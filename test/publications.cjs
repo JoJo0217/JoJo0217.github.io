@@ -13,7 +13,10 @@ async function main() {
       await page.goto("https://jojo0217.github.io/");
       assert.equal(await page.locator(".news-item").count(), 4);
       assert.equal(await page.locator(".news-item .date").first().textContent(), "Sep 25, 2026");
-      assert.match(await page.locator(".news-item").first().innerText(), /Our papers Generative Recursive Reasoning and BabyTheorist: .* are accepted to NeurIPS 2026!/);
+      assert.match(await page.locator(".news-item").first().innerText(), /Two papers\u2014GRAM and BabyTheorist\u2014were accepted to NeurIPS 2026!/);
+      assert.equal(await page.locator(".news-item strong").textContent(), "Two papers");
+      assert.equal(await page.locator(".news-list").getByRole("link", { name: "GRAM", exact: true }).getAttribute("href"), "https://arxiv.org/abs/2605.19376");
+      assert.equal(await page.locator(".news-list").getByRole("link", { name: "Loopholing Discrete Diffusion", exact: true }).getAttribute("href"), "https://arxiv.org/abs/2510.19304");
       assert.equal(await page.locator(".publication").count(), 2);
       assert.equal(await page.locator(".publication").filter({ hasText: "BabyTheorist" }).count(), 0);
 

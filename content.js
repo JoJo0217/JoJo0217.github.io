@@ -61,12 +61,13 @@ window.siteContent = {
   news: [
     {
       date: "Sep 25, 2026",
-      textBefore: "Our papers ",
+      lead: "Two papers",
+      textBefore: "\u2014",
       link: {
-        label: "Generative Recursive Reasoning",
+        label: "GRAM",
         url: "https://arxiv.org/abs/2605.19376",
       },
-      textAfter: " and BabyTheorist: A Benchmark for Learning to Theorize the World from Observation Alone are accepted to NeurIPS 2026!",
+      textAfter: " and BabyTheorist\u2014were accepted to NeurIPS 2026!",
     },
     {
       date: "May 20, 2026",
@@ -85,8 +86,7 @@ window.siteContent = {
       date: "Jan 26, 2026",
       textBefore: "Our paper ",
       link: {
-        label:
-          "Loopholing Discrete Diffusion: Deterministic Bypass of the Sampling Wall",
+        label: "Loopholing Discrete Diffusion",
         url: "https://arxiv.org/abs/2510.19304",
       },
       textAfter: " is accepted to ICLR 2026!",
