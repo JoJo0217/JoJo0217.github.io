@@ -32,7 +32,7 @@ window.siteContent = {
       { value: "4.40/4.5", label: "total GPA" },
       { value: "TOEIC 850", label: "English" },
     ],
-    footer: "Last update: May.2026",
+    footer: "Last update: Sep.2026",
     visual: "assets/files/research-map.png",
   },
 
