@@ -55,7 +55,7 @@ window.siteContent = {
   ],
 
   academicService: [
-    "Reviewer (Conferences): NeurIPS (2026)",
+    "Reviewer (Conferences): NeurIPS (2026), ICLR (2027)",
   ],
 
   news: [
@@ -127,6 +127,7 @@ window.siteContent = {
       links: [
         { label: "paper", url: "https://arxiv.org/abs/2605.19376" },
         { label: "page", url: "https://ahn-ml.github.io/gram-website/" },
+        { label: "code", url: "https://github.com/ahn-ml/gram-release" },
       ],
     },
     {

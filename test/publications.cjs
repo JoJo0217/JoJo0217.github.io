@@ -11,6 +11,7 @@ async function main() {
     for (const width of [1280, 390]) {
       await page.setViewportSize({ width, height: 900 });
       await page.goto("https://jojo0217.github.io/");
+      assert.equal(await page.locator('[data-list="academicService"]').innerText(), "Reviewer (Conferences): NeurIPS (2026), ICLR (2027)");
       assert.equal(await page.locator(".news-item").count(), 4);
       assert.deepEqual(await page.locator(".news-item .date").allTextContents(), ["Sep 2026", "May 2026", "Mar 2026", "Jan 2026"]);
       assert.match(await page.locator(".news-item").first().innerText(), /Two papers\u2014GRAM and BabyTheorist\u2014were accepted to NeurIPS 2026!/);
@@ -26,6 +27,7 @@ async function main() {
         assert.equal(await grr.locator(".authors + .meta").textContent(), "* Equal contribution");
         assert.equal(await grr.locator(".meta + .venue").textContent(), "Advances in Neural Information Processing Systems (NeurIPS), 2026");
         assert.equal(await grr.locator(".authors .me").textContent(), "Mingyu Jo");
+        assert.equal(await grr.getByRole("link", { name: "code", exact: true }).getAttribute("href"), "https://github.com/ahn-ml/gram-release");
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
         if (process.env.SCREENSHOT_DIR) {
           await page.screenshot({ path: `${process.env.SCREENSHOT_DIR}/${path ? "publications" : "home"}-${width}.png`, fullPage: true });
